@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilePage">
+
+    <View
+        android:id="@+id/rectangle_my_profile_page"
+        android:layout_width="410dp"
+        android:layout_height="256dp"
+        android:background="@drawable/rectangle_ek1_profilepage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imgViewStatusbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_my_profile_page"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/statusbar" />
+
+    <TextView
+        android:id="@+id/request_money"
+        android:layout_width="71dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="@string/profile_page_string"
+        android:textColor="@color/add_payment_note_color"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.091" />
+
+
+    <ImageView
+        android:id="@+id/profile_picture"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/rectangle_ek1_profilepage"
+        android:contentDescription="profile_picture"
+        android:src="@drawable/profilepicturepage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.17000002" />
+
+    <ImageView
+        android:id="@+id/profile_edit"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:contentDescription="profile_picture"
+        android:src="@drawable/edit_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.883"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.09" />
+
+    <TextView
+        android:id="@+id/profilename"
+        android:layout_width="108dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_horizontal|center"
+        android:layout_marginTop="220dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:text="@string/profile_name_string"
+        android:textColor="@color/add_payment_note_color"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_my_profile_page"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- star rectangle_profile_page -->
+
+    <View
+        android:id="@+id/rectangle_profile_page"
+        android:layout_width="336dp"
+        android:layout_height="55dp"
+        android:background="@drawable/rectangle_ek1_profilepage"
+        android:text="@string/send_payment_string"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.436" />
+
+    <ImageView
+        android:id="@+id/profile_icon_page"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:contentDescription="profile_icon_page"
+        android:src="@drawable/profile_icon_page"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_profile_page"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_profile_page"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_profile_page"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_profile_page"
+        app:layout_constraintVertical_bias="0.516" />
+
+    <TextView
+        android:id="@+id/profile_information_string"
+        android:layout_width="75dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/profile_information_string"
+        android:textColor="@color/black"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_profile_page"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_profile_page"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_profile_page"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_profile_page"
+        app:layout_constraintVertical_bias="0.86" />
+
+    <ImageView
+        android:id="@+id/arrow_icon_profile_page"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:contentDescription="arrow_icon"
+        android:src="@drawable/arrow_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_profile_page"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_profile_page"
+        app:layout_constraintHorizontal_bias="0.932"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_profile_page"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_profile_page"
+        app:layout_constraintVertical_bias="0.516" />
+    <!-- End rectangle_profile_page -->
+    <!-- star rectangle_card_icon -->
+
+    <View
+        android:id="@+id/rectangle_card_icon"
+        android:layout_width="336dp"
+        android:layout_height="55dp"
+        android:background="@drawable/rectangle_ek1_profilepage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.562" />
+
+    <ImageView
+        android:id="@+id/card_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:contentDescription="card_icon"
+        android:src="@drawable/card_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_card_icon"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_card_icon"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_card_icon"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_card_icon"
+        app:layout_constraintVertical_bias="0.483" />
+
+
+    <TextView
+        android:id="@+id/card_icontxt"
+        android:layout_width="64dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/profile_my_cards_string"
+        android:textColor="@color/black"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_card_icon"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_card_icon"
+        app:layout_constraintHorizontal_bias="0.253"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_card_icon"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_card_icon"
+        app:layout_constraintVertical_bias="0.56" />
+
+    <ImageView
+        android:id="@+id/car_arrow_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:contentDescription="arrow_icon"
+        android:src="@drawable/arrow_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_card_icon"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_card_icon"
+        app:layout_constraintHorizontal_bias="0.932"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_card_icon"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_card_icon"
+        app:layout_constraintVertical_bias="0.483" />
+
+    <!-- End rectangle_card_icon -->
+    <!-- star rectangle_settings_icon -->
+
+    <View
+        android:id="@+id/rectangle_settings_icon"
+        android:layout_width="336dp"
+        android:layout_height="55dp"
+        android:background="@drawable/rectangle_ek1_profilepage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.693" />
+
+    <ImageView
+        android:id="@+id/settings_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="288dp"
+        android:layout_marginBottom="12dp"
+        android:contentDescription="settings_icon"
+        android:src="@drawable/settings_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_settings_icon"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_settings_icon"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_settings_icon"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_settings_icon"
+        app:layout_constraintVertical_bias="0.947" />
+
+    <TextView
+        android:id="@+id/settings_icontxt"
+        android:layout_width="54dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="220dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/profile_options_string"
+        android:textColor="@color/black"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_settings_icon"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_settings_icon"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_settings_icon"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_settings_icon"
+        app:layout_constraintVertical_bias="0.56" />
+
+    <ImageView
+        android:id="@+id/car_arrow_icon_setting"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:contentDescription="arrow_icon"
+        android:src="@drawable/arrow_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_settings_icon"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_settings_icon"
+        app:layout_constraintHorizontal_bias="0.932"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_settings_icon"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_settings_icon"
+        app:layout_constraintVertical_bias="0.483" />
+
+    <!-- End rectangle_settings_icon -->
+    <!-- star rectangle_help_icon -->
+
+    <View
+        android:id="@+id/rectangle_help_icon"
+        android:layout_width="336dp"
+        android:layout_height="55dp"
+        android:background="@drawable/rectangle_ek1_profilepage"
+        android:text="@string/send_payment_string"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.815" />
+
+    <ImageView
+        android:id="@+id/help_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:contentDescription="help_icon"
+        android:src="@drawable/help_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_help_icon"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_help_icon"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_help_icon"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_help_icon"
+        app:layout_constraintVertical_bias="0.483" />
+
+    <TextView
+        android:id="@+id/help_icontxt"
+        android:layout_width="85dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/profile_help_string"
+        android:textColor="@color/black"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_help_icon"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_help_icon"
+        app:layout_constraintHorizontal_bias="0.262"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_help_icon"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_help_icon"
+        app:layout_constraintVertical_bias="0.55" />
+
+    <ImageView
+        android:id="@+id/arrow_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:contentDescription="arrow_icon"
+        android:src="@drawable/arrow_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_help_icon"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_help_icon"
+        app:layout_constraintHorizontal_bias="0.932"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_help_icon"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_help_icon"
+        app:layout_constraintVertical_bias="0.483" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
